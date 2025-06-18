@@ -9,6 +9,6 @@ struct computer {
 	void showinfo() {
 		cout << "Name: " << name << endl;
 		cout << "RAM: " << ram << " GB" << endl;
-		cout << "Price: $" << price << endl;
+		cout << "Price: " << price << endl;
 	}
 };
