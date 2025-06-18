@@ -1,22 +1,21 @@
 ﻿#include <iostream>
-#include <windows.h>
-#include <cstdlib>
-#include <ctime>
-#include <cstdio>
 #include "computer.h"
-using namespace std;
+int main()
+{
+	int n = 5;
+	computer* arr = new computer[n]{
+		{"Asus", 8, 15'000},
+		{"Lenovo", 6, 14'000},
+		{"Dell", 8, 16'000},
+		{"Acer", 8, 17'000},
+		{"HP", 4, 10'000},
 
-
-int main() {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    setlocale(0, "");
-    int n = 5;
-    computer* arr = new computer[n]{
-        {"Asus", 8, 15'000},
-        {"Dell", 16, 20'000},
-        {"HP", 4, 10'000},
-        {"Lenovo", 32, 30'000},
-        {"Acer", 12, 25'000}
-    }
+	};
+	cout << "Computer with RAM > 10\n";
+	for (int i = 0; i < n; i++)
+	{
+		if (arr[i].ram > 10) {
+			cout << arr[i].name << endl;
+		}
+	}
 }
