@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <windows.h>
 #include "computer.h"
 int main()
 {
