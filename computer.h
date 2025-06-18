@@ -8,7 +8,7 @@ struct computer {
 	
 	void showinfo() {
 		cout << "Name: " << name << endl;
-		cout << "RAM: " << ram << " GB" << endl;
+		cout << "RAM: " << ram << endl;
 		cout << "Price: " << price << endl;
 	}
 };
